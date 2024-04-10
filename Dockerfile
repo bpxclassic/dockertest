@@ -2,5 +2,10 @@
 
 FROM ubuntu:22.04
 
+# adding dependencies
+RUN apt-get update && apt-get install -y python3 python3-pip 
 
-RUN echo hello world
+COPY hello.py
+
+RUN hello.py
+
