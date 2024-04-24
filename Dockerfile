@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y python3 python3-pip
 
 # startup app on port 8000
 
-CMD [hello.py]
+CMD ["hello.py"]
 
 RUN hello.py
 RUN echo hello world
