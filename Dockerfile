@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y python3 python3-pip
 
 RUN echo hello world
 
-EXPOSE 8000/tcp
+EXPOSE 8000
