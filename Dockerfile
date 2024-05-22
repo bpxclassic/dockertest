@@ -3,10 +3,14 @@
 FROM ubuntu:22.04 
 
 # adding dependencies
+
+WORKDIR /app
+
 RUN apt-get update && apt-get install -y python3 python3-pip
 
 # startup app on port 8000
 
-RUN echo hello world
+CMD ["hello.py", "start"]
 
 EXPOSE 8000
+
