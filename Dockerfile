@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y python3 python3-pip
 
 # copy in app
 
-COPY hello.py 
+COPY app 
 
 EXPOSE 8000
 
